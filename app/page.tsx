@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const BUY = "#comprar";
+const BUY = "https://pay.hotmart.com/A105059658Y";
 const PAD = "padding: 100px clamp(24px, 6vw, 100px)";
 
 /* ── Icons ── */
