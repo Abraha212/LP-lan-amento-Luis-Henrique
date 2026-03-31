@@ -241,47 +241,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ═══ CONTEÚDO ══════════════════════════════════════ */}
-      <section style={{ background:"#f5f7fa", padding:sp }}>
-        <div style={{ maxWidth:1080, margin:"0 auto" }}>
-          <div style={{ textAlign:"center", marginBottom:60 }}>
-            <Eyebrow text="O que está dentro" />
-            <h2 style={{
-              fontFamily:"var(--font-playfair)",
-              fontSize:"clamp(28px, 3.5vw, 44px)",
-              fontWeight:800, lineHeight:1.2, color:"#0d1c2e",
-            }}>
-              Seis blocos. Cada um com uma função.
-            </h2>
-          </div>
-
-          <div className="modules-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3, 1fr)" }}>
-            {MODULES.map((m, i) => (
-              <div key={i} style={{
-                padding:"36px 32px",
-                borderTop:"1px solid #dde5ef",
-                borderRight: i % 3 !== 2 ? "1px solid #dde5ef" : "none",
-              }}>
-                <div style={{
-                  width:44, height:44, borderRadius:"50%",
-                  background:"var(--blue)", color:"#fff",
-                  display:"flex", alignItems:"center", justifyContent:"center",
-                  marginBottom:20,
-                }}>{m.icon}</div>
-                <p style={{
-                  fontSize:10, fontWeight:700, letterSpacing:"0.1em",
-                  textTransform:"uppercase", color:"var(--gold)", marginBottom:8,
-                }}>Módulo {String(i+1).padStart(2,"0")}</p>
-                <h3 style={{
-                  fontFamily:"var(--font-playfair)", fontSize:18,
-                  fontWeight:700, color:"#0d1c2e", marginBottom:10,
-                }}>{m.title}</h3>
-                <p style={{ fontSize:14, lineHeight:1.75, color:"#354f6b" }}>{m.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ═══ AUTORIDADE ════════════════════════════════════ */}
       <section style={{
